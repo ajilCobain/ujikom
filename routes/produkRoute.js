@@ -3,10 +3,10 @@ const router = express.Router();
 const produkController = require('../controllers/produkController');
 
 // CREATE: Menambahkan data ke dalam tabel kategoris
-router.post('/api/v1/produk/', produkController.create);
+router.post('/api/v1/produk', produkController.create);
 
 // READ: Menampilkan atau mengambil semua data dari tabel kategoris
-router.get('/api/v1/produk/', produkController.findAll);
+router.get('/api/v1/produk', produkController.findAll);
 
 // READ: Mengambil data berdasarkan id
 router.get('/api/v1/produk/:id', produkController.findOne);
